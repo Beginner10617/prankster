@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+        import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCmL3X8pQOHhtXMIFTxJsO7KHQ2nDr_G6w",
+            authDomain: "ask-fun-d10f0.firebaseapp.com",
+            projectId: "ask-fun-d10f0",
+            storageBucket: "ask-fun-d10f0.appspot.com",
+            messagingSenderId: "214597529567",
+            appId: "1:214597529567:web:d49e8aeef77b9e0a039e6a",
+            measurementId: "G-5DV1ZR5ZHG"
+        };
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        window.analytics = analytics
+        window.logEvent = logEvent
+        </script>
+        <title>@{{username}}</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='normalize.css')}}">
+        
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+        <link rel="shortcut icon" href="/images/ngl.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+        <meta name="user:language" content="en">
+        <meta property="og:image" content="https://ngl.link/images/ngl-big.png">
+        <meta property="og:title" content="Anonymous messages!">
+        <meta property="og:description" content="Anonymous messages!">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="https://ngl.link/images/ngl-big.png">
+        <meta name="twitter:title" content="@chinmay_this_side_: Send me anonymous messages!">
+        <meta name="twitter:description" content="NGL: Anonymous Q&amp;A">
+        <script></script>
+    <style>
+        .pfp-container {
+            border-radius:300px;
+            width:40px;
+            height:40px;
+            background-color: #F1F1F1;
+            background-image: url("{{ url_for('static', filename='Images/pfp.jpg') }}");
+            background-position:center center;
+            background-size: 40px 40px;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            position: relative;
+            flex-shrink: 0;
+            display: block;
+        }
+    </style>
+    
+    </head>
+<body><script>
+    var translations = {"peopleJustTappedTheButton":"people just tapped the button","sendButton":"Send!","anonymousQA":"anonymous q&a","inputPlaceHolder":"send me anonymous messages...","downloadButton":"Get your own messages!"}
+    var priorityInboxEnabled = false
+    var username = {username}
+    var uid = "aSSnNTFMHxcxH8aRXy5jWTVOKnB3"
+    var gameSlug = ""
+    var gameId = "default"
+    var ig_username = {username}
+    var ig_pfp_url = ""
+    </script>
+    <input type="hidden" id="userRegion" value="IN"><div class="container" style="z-index: 1000; position: relative">
+        <form class="form" method="post">
+            <div class="bubble">
+                <div class="header">
+                    <div class="pfp-container">
+
+                    </div>
+                    <div class="user-container">
+                        <div class="username">@{{username}}</div>
+                        <div class="prompt">send me anonymous messages!</div>
+                    </div>
+                </div>
+                <div class="textarea-container">
+                    <div class="dice-button">🎲</div>
+                    <textarea placeholder="send me anonymous messages..." name="question" autocomplete="off" maxlength="300" id="question"></textarea>
+                </div>
+                <input class="deviceId" type="hidden" name="deviceId" id="deviceId" value="da88e66d-f32e-4cad-95b1-cf6a5fedbdfc">
+            </div>
+            <div class="anonymous-tooltip">🔒 anonymous q&amp;a</div>
+            <button class="submit" type="submit" style="transform: translateZ(0px); z-index: 1000; display: none;">Send!</button>
+        </form>
+    </div>
+    <div class="bottom-container-user-wrapper">
+        <div class="bottom-container">
+            <h2 class="download-prompt">👇 
+                <span class="clickCount">341</span> 
+                people just tapped the button👇 
+            </h2>
+            <div class="space2"></div>
+            <a class="button download-link download-link1 pulse" href="https://apps.apple.com/us/app/ngl-anonymous-q-a/id1596550932?ppid=543cb167-5bdc-448f-a202-e5506f5d2837" target="_blank">
+                Get your own messages!
+            </a>
+            <div class="tos-privacy">
+                <a class="tos" href="/p/terms">Terms</a>
+                <a class="privacy" href="/p/privacy">Privacy</a>
+            </div>
+        </div>
+    </div>
+    <iframe name="__privateStripeController5771" frameborder="0" allowtransparency="true" scrolling="no" role="presentation" allow="payment *" src="https://js.stripe.com/v3/controller-with-preconnect-7e20bcd5a3935c0bf3cb416390909274.html#__shared_params__[version]=v3&amp;apiKey=pk_live_51KwBgeDayQIxBLDTG6X0rPdazndS0eXsXGLzJExz4TA9TmUMUUfXYflI17I7sE1ZRiE8t9YClg9cUZFRiDYOM36r00oOijCjA4&amp;apiVersion=2020-08-27&amp;stripeJsId=93d1dbc2-866c-4026-a03b-deae85e49899&amp;firstStripeInstanceCreatedLatency=64&amp;controllerCount=1&amp;isCheckout=false&amp;stripeJsLoadTime=1744930405148&amp;manualBrowserDeprecationRollout=false&amp;mids[guid]=NA&amp;mids[muid]=NA&amp;mids[sid]=NA&amp;referrer=https%3A%2F%2Fngl.link%2Fchinmay_this_side_2%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAafmFxwsC_rdIJOq9QwV1Xp-SekPE2uSC26RFKZxsaatyqh0ozVDHGgi9jodig_aem_hELlnySLl6SOOu6m_vdE_A&amp;controllerId=__privateStripeController5771" aria-hidden="true" tabindex="-1" style="border: medium !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important;">
+
+    </iframe>
+    <iframe name="__privateStripeMetricsController5770" frameborder="0" allowtransparency="true" scrolling="no" role="presentation" allow="payment *" src="https://js.stripe.com/v3/m-outer-3437aaddcdf6922d623e172c2d6f9278.html#url=https%3A%2F%2Fngl.link%2Fchinmay_this_side_2%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAafmFxwsC_rdIJOq9QwV1Xp-SekPE2uSC26RFKZxsaatyqh0ozVDHGgi9jodig_aem_hELlnySLl6SOOu6m_vdE_A&amp;title=%40chinmay_this_side_&amp;referrer=https%3A%2F%2Fl.instagram.com%2F&amp;muid=NA&amp;sid=NA&amp;version=6&amp;preview=false&amp;__shared_params__[version]=v3" aria-hidden="true" tabindex="-1" style="border: medium !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important;">
+
+    </iframe>
+    <script>
+        $(document).ready(function () {
+          const APP_CDN_BASE_URL = 'https://cdn.simplelocalize.io/d6cb2f56863b434c8fba40f9404505f9/_latest/'
+          const userLanguage = $("meta[name='user:language']").attr('content') || 'en'
+          let randomQuestions = []
+    
+          $.get(APP_CDN_BASE_URL + userLanguage, function (data) {
+            const fakeQuestionKeys = Object.keys(data).filter(key => key.startsWith('default.'))
+            randomQuestions = fakeQuestionKeys.map(key => data[key])
+          })
+    
+          $('.dice-button').click(function (e) {
+            if (randomQuestions.length === 0) return
+            const randomQuestion = randomQuestions[Math.floor(Math.random() * randomQuestions.length)]
+            $('textarea').val(randomQuestion + ' ')
+            $('textarea').focus()
+            $('textarea')[0].selectionStart = randomQuestion.length + 1
+            $('textarea')[0].selectionEnd = randomQuestion.length + 1
+    
+            $('.submit').show()
+            e.preventDefault()
+          })
+        })
+        $('textarea').on('input', function (e) {
+    if (e.target.value == '' && !/android/i.test(userAgent)) {
+      $('.submit').hide()
+    } else {
+      $('.submit').show()
+    }
+  })
+      </script>
+</body>
+</html>
