@@ -63,4 +63,30 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 '''
+runtime: python
+env: flex
+entrypoint: gunicorn -b :$PORT main:app
+
+runtime_config:
+  operating_system: ubuntu22
+
+automatic_scaling:
+  min_num_instances: 1   # Keep at least 1 instance running
+  max_num_instances: 10  # Scale up to 10 instances if needed
+  cool_down_period_sec: 60  # Wait 60 seconds before scaling down
+  max_concurrent_requests: 80  # Each instance can handle 80 requests before scaling up
+
+env_variables:
+  PAWD = 'zrnl gkpy zkqx ucdy'
+  MAIL= 'zakirhusain109856@gmail.com'
+
+resources:
+  cpu: 2
+  memory_gb: 2
+  disk_size_gb: 10
+
+handlers:
+- url: /.*
+  script: auto
+  secure: always  # Forces HTTPS
 '''
