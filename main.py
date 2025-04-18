@@ -59,4 +59,8 @@ def prank_ngl_post(username):
 @app.route('/ngl.link/rickroll', methods=['GET'])
 def rickRoll():
     return render_template('rick-roll.html')
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
+
+'''
+'''
